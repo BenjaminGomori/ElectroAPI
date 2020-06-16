@@ -1,0 +1,111 @@
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res, next) => {
+	res.status(200).json({
+		message: 'Succsess',
+		data: [
+			{
+				oldPrice: '559.99',
+				price: '439.99',
+				company: 'Asus',
+				attributes: ['Recomended'],
+				title: 'ASUS 4th Generation 2FGL102',
+				mainImage: './images/laptaps/laptap_a.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '129.99',
+				price: '89.99',
+				company: 'Asus',
+				attributes: ['Best Seller'],
+				title: 'ASUS 3RD Generation HHGL02',
+				mainImage: './images/laptaps/szabo-viktor-ZunZ6pnMytg-unsplash.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '',
+				price: '129.99',
+				company: 'Asus',
+				attributes: ['Best Seller'],
+				title: 'ASUS 3RD Generation LLGL01',
+				mainImage: './images/laptaps/luis-quintero-aUnkqeCvz80-unsplash.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '',
+				price: '99.99',
+				company: 'Google',
+				attributes: ['High Performance'],
+				title: 'Chrome Book II74B5.',
+				mainImage: './images/laptaps/computer-1330162_1920.png',
+				images: [],
+			},
+			{
+				oldPrice: '329.99',
+				price: '201.95',
+				company: 'DELL',
+				attributes: ['High Performance'],
+				title: 'DELL Pro 4.3V',
+				mainImage: './images/laptaps/laptap_b.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '',
+				price: '160.25',
+				company: 'DELL',
+				attributes: ['Recomended'],
+				title: 'DELL Pro 3.7V',
+				mainImage: './images/laptaps/laptop_new_4.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '199.99',
+				price: '126.95',
+				company: 'HP',
+				attributes: [],
+				title: 'HP Evolution 5.1',
+				mainImage: './images/laptaps/goran-ivos-iacpoKgpBAM-unsplash.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '129.99',
+				price: '87.95',
+				company: 'HP',
+				attributes: ['Recomended'],
+				title: 'HP Evolution 4.5',
+				mainImage: './images/laptaps/laptap_new_3b.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '',
+				price: '349.99',
+				company: 'Lenovo',
+				attributes: ['Best Seller'],
+				title: 'Lenovo Pro 7.1',
+				mainImage: './images/laptaps/laptop_new_4.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '179.99',
+				price: '98.95',
+				company: 'Lenovo',
+				attributes: ['Best Seller'],
+				title: 'Lenovo Pro 6.4V3',
+				mainImage: './images/laptaps/laptap_new_f.jpg',
+				images: [],
+			},
+			{
+				oldPrice: '',
+				price: '125.45',
+				company: 'Lenovo',
+				attributes: [],
+				title: 'Lenovo Pro 6.4V2',
+				mainImage: './images/laptaps/jay-prajapati-Jp6Z2Mp5Sq0-unsplash.jpg',
+				images: [],
+			},
+		],
+	});
+});
+
+module.exports = router;
